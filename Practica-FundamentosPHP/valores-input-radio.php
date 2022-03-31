@@ -5,8 +5,8 @@
         $nombre = (isset($_POST["nombre"])) ? $_POST["nombre"] : "";
         $radLenguaje = (isset($_POST["lenguaje"])) ? $_POST["lenguaje"] : "";
 
-        print_r($_POST);
-        print_r($radLenguaje);
+        //print_r($_POST);
+        //print_r($radLenguaje);
     }
 ?>
 <!DOCTYPE html>
