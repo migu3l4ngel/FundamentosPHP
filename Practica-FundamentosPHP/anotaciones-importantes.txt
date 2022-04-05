@@ -1,0 +1,17 @@
+En referencia a las funciones INCLUDE y REQUIRE
+
+La diferencia está en cómo tratan los errores ambas funciones. 
+Entonces, puedes utilizar require siempre que el código sea importante 
+(Funciones reutilizables, configuraciones…), mientras que include lo 
+usaría en casos en los que el código no es vital para la ejecución del 
+script (cabeceras y pies HTML o similares).
+
+Por otro lado, INCLUDE_ONCE y REQUIRE_ONCE
+
+Funcionan exactamente de la misma forma que las anteriores salvo que 
+impiden la carga de un mismo fichero varias veces.
+Finalmente se debe utilizar las variantes con _once cuando nuestro 
+programa tenga unas dimensiones considerables y pueda darse el caso 
+de que la inclusión del fichero se produzca varias veces. Estas 
+últimas variantes hay que usarlas solo en casos excepcionales,
+ya que, consumen más recursos que las anteriores.

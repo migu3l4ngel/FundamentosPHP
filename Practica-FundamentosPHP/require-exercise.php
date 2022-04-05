@@ -8,6 +8,11 @@
 </head>
 <body>
     <?php
+        //* FUNCIÓN REQUIRE*/
+        /*inserta en nuestro script un código procedente de otro archivo,
+        pero en caso de no existir el archivo o error en el mismo mostrará 
+        un //!'E_COMPILE_ERROR' 
+        y el script no se sigue ejecutando*/
         require "function-require.php";
     ?>
     <?php echo "Estoy en la página principal"; ?>

@@ -8,7 +8,11 @@
 </head>
 <body>
     <?php
-        //* FUNCIÓN INC*/
+        //* FUNCIÓN INCLUDE*/
+        /*inserta en nuestro script un código procedente de otro archivo, 
+        si no existe dicho archivo o si contiene algún tipo de error 
+        nos mostrará un //!'E_WARNING' 
+        por pantalla y el script seguirá ejecutándose.*/
         include "function-include.php";
     ?>
     <?php echo "Estoy en la página principal"; ?>
